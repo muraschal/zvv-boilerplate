@@ -1,18 +1,19 @@
 const ZvvButton = ({ 
   children, 
   variant = 'primary', 
+  as: Component = 'button', 
   className = '', 
   ...props 
 }) => {
   const baseClass = variant === 'primary' ? 'zvv-button-primary' : 'zvv-button-secondary';
   
   return (
-    <button 
+    <Component
       className={`${baseClass} ${className}`}
       {...props}
     >
       {children}
-    </button>
+    </Component>
   );
 };
 
