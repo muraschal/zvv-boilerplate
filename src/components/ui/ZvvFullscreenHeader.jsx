@@ -5,7 +5,7 @@ import ZvvButton from './ZvvButton'
 const ZvvFullscreenHeader = ({ 
   title, 
   subtitle, 
-  backgroundImage = '/images/zurich-hb.jpg',
+  backgroundImage = 'https://www.zvv.ch/dam/jcr:26d78b6c-7e4f-4f2f-9f7d-e4b8e1310c1f/hero_desktop.jpg',
   ctaText = 'Mehr erfahren',
   onCtaClick
 }) => {

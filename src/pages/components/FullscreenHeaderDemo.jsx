@@ -8,6 +8,7 @@ const FullscreenHeaderDemo = () => {
       <ZvvFullscreenHeader 
         title="Willkommen in Zürich"
         subtitle="Entdecken Sie die Stadt mit dem besten öffentlichen Verkehr der Schweiz"
+        backgroundImage="https://www.zvv.ch/dam/jcr:26d78b6c-7e4f-4f2f-9f7d-e4b8e1310c1f/hero_desktop.jpg"
         onCtaClick={() => console.log('CTA clicked')}
       />
       
