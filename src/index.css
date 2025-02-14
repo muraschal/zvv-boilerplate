@@ -2,4 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './styles/zvv-base.css';
+@layer base {
+  @import './styles/zvv-base.css';
+}
