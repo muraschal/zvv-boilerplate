@@ -1,0 +1,75 @@
+@layer base {
+  /* Font-Einbindung */
+  @font-face {
+    font-family: 'FrutigerNextPro';
+    src: url('/fonts/FrutigerNextPro-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'FrutigerNextPro';
+    src: url('/fonts/FrutigerNextPro-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'FrutigerNextPro';
+    src: url('/fonts/FrutigerNextPro-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  /* Basis-Styles */
+  body {
+    @apply font-zvv text-base text-zvv-gray-900 bg-white;
+  }
+
+  h1 {
+    @apply text-3xl font-bold mb-6;
+  }
+
+  h2 {
+    @apply text-2xl font-bold mb-4;
+  }
+
+  h3 {
+    @apply text-xl font-bold mb-3;
+  }
+
+  a {
+    @apply text-zvv-blue hover:text-zvv-blue-dark transition-colors;
+  }
+}
+
+@layer components {
+  /* ZVV Button Styles */
+  .zvv-button {
+    @apply inline-flex items-center justify-center px-6 py-2 
+           border border-transparent rounded-zvv font-medium 
+           transition-colors duration-200;
+  }
+
+  .zvv-button-primary {
+    @apply zvv-button bg-zvv-blue text-white 
+           hover:bg-zvv-blue-dark;
+  }
+
+  .zvv-button-secondary {
+    @apply zvv-button border-zvv-blue text-zvv-blue 
+           hover:bg-zvv-blue hover:text-white;
+  }
+
+  /* ZVV Input Styles */
+  .zvv-input {
+    @apply w-full px-4 py-2 border border-zvv-gray-300 
+           rounded-zvv focus:ring-2 focus:ring-zvv-blue 
+           focus:border-zvv-blue outline-none;
+  }
+
+  /* ZVV Container */
+  .zvv-container {
+    @apply max-w-zvv-container mx-auto px-4;
+  }
+} 
