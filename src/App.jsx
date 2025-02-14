@@ -7,7 +7,7 @@ const App = () => {
       <header className="bg-white border-b border-zvv-gray-200">
         <div className="zvv-container py-6">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-zvv-condensed font-bold text-zvv-blue">
+            <h1 className="text-2xl font-bold text-zvv-blue">
               ZVV Design System
             </h1>
             <nav>
@@ -26,8 +26,16 @@ const App = () => {
       </header>
 
       <main className="zvv-container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Template Cards hier */}
+        <div className="text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Willkommen zur ZVV Boilerplate
+          </h2>
+          <p className="text-lg text-zvv-gray-600 mb-8">
+            Ein modernes Frontend-Setup mit React, Tailwind und dem ZVV Design System.
+          </p>
+          <ZvvButton variant="primary">
+            Los geht's!
+          </ZvvButton>
         </div>
       </main>
     </div>
