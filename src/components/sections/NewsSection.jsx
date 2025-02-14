@@ -2,22 +2,22 @@ import ZvvTeaser from '../ui/ZvvTeaser';
 
 const NEWS_DATA = [
   {
-    image: '/news/kundencenter.jpg',
+    image: 'https://www.zvv.ch/dam/jcr:d5a87d6a-7bce-4345-a5f9-5c4d8a03e1f6/kontaktstelle_hb_teaser.jpg',
     title: 'ZVV-Contact-Kundencenter am Zürich HB',
     description: 'Das ZVV-Kundencenter am HB zieht um. Ab dem 10. März 2025 begrüssen wir Sie in der Halle Landesmuseum.',
     link: '/news/kundencenter'
   },
   {
-    image: '/news/qr-code.jpg',
+    image: 'https://www.zvv.ch/dam/jcr:6c0f6a4d-e528-4e7d-b0e4-c1a2c82d3e4a/qr_code_teaser.jpg',
     title: 'Via QR-Code zu Echtzeitinformationen',
     description: 'Rufen Sie die nächsten Abfahrtszeiten in Echtzeit ab. Einfach den QR-Code an der Haltestelle scannen und informiert bleiben.',
-    link: '#'
+    link: '/news/qr-code'
   },
   {
-    image: '/news/ticket.jpg',
+    image: 'https://www.zvv.ch/dam/jcr:f5c6e2f1-7d4c-4ab0-8f3e-4c9b1c3a7c3e/billettautomat_teaser.jpg',
     title: 'Viele Wege zum ZVV-Ticket – auch ohne Smartphone',
     description: 'Der Zugang zu Tickets bleibt für alle Fahrgäste, auch ohne Smartphone, unkompliziert und vielfältig.',
-    link: '#'
+    link: '/news/tickets'
   }
 ];
 
