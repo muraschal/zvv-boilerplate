@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import KundencenterNews from './pages/news/KundencenterNews'
 import NewsTeaserDemo from './pages/components/NewsTeaserDemo'
 import FullscreenHeaderDemo from './pages/components/FullscreenHeaderDemo'
+import ContainerDemo from './pages/components/ContainerDemo'
 
 const Header = () => (
   <header className="bg-white border-b border-zvv-gray-200">
@@ -38,6 +39,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/components/news-teaser" element={<NewsTeaserDemo />} />
           <Route path="/components/fullscreen-header" element={<FullscreenHeaderDemo />} />
+          <Route path="/components/container" element={<ContainerDemo />} />
           <Route path="/news/kundencenter" element={<KundencenterNews />} />
         </Routes>
       </main>

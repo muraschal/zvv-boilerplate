@@ -56,7 +56,7 @@ const COMPONENT_CATEGORIES = [
     components: [
       {
         title: 'Input Fields',
-        description: 'Textfelder, Select-Menüs und Checkboxen.',
+        description: 'Textfelder, Select-Menüs und Checkboxen im ZVV Design.',
         link: '/components/inputs'
       }
     ]

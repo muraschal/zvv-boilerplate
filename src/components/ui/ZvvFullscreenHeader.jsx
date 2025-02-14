@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import ZvvButton from './ZvvButton'
+import PropTypes from 'prop-types'
 
 const ZvvFullscreenHeader = ({ 
   title, 
@@ -84,5 +85,13 @@ const ZvvFullscreenHeader = ({
     </motion.header>
   )
 }
+
+ZvvFullscreenHeader.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  backgroundImage: PropTypes.string,
+  ctaText: PropTypes.string,
+  onCtaClick: PropTypes.func.isRequired
+};
 
 export default ZvvFullscreenHeader 

@@ -16,7 +16,7 @@ const KundencenterNews = () => {
           </h1>
           
           <img 
-            src="/news/kundencenter.jpg"
+            src="https://www.zvv.ch/dam/jcr:d5a87d6a-7bce-4345-a5f9-5c4d8a03e1f6/kontaktstelle_hb_teaser.jpg"
             alt="ZVV Kundencenter"
             className="w-full rounded-zvv mb-8"
           />

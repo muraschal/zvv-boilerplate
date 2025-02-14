@@ -1,4 +1,5 @@
 import ZvvTeaser from '../ui/ZvvTeaser';
+import PropTypes from 'prop-types';
 
 const NEWS_DATA = [
   {
@@ -21,7 +22,7 @@ const NEWS_DATA = [
   }
 ];
 
-const NewsSection = () => {
+const NewsSection = ({ items = NEWS_DATA }) => {
   return (
     <section className="py-12 bg-zvv-gray-100">
       <div className="zvv-container">
@@ -29,7 +30,7 @@ const NewsSection = () => {
           News
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {NEWS_DATA.map((news, index) => (
+          {items.map((news, index) => (
             <ZvvTeaser
               key={index}
               {...news}
@@ -39,6 +40,17 @@ const NewsSection = () => {
       </div>
     </section>
   );
+};
+
+NewsSection.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      link: PropTypes.string.isRequired
+    })
+  )
 };
 
 export default NewsSection; 

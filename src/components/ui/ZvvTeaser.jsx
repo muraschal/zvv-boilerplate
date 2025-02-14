@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const ZvvTeaser = ({ 
   image, 
   title, 
@@ -27,6 +29,14 @@ const ZvvTeaser = ({
       </div>
     </a>
   );
+};
+
+ZvvTeaser.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  link: PropTypes.string,
+  imageAlt: PropTypes.string
 };
 
 export default ZvvTeaser; 
