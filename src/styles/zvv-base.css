@@ -70,6 +70,6 @@
 
   /* ZVV Container */
   .zvv-container {
-    @apply max-w-zvv-container mx-auto px-4;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 } 

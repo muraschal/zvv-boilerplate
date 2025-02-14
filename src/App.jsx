@@ -1,4 +1,5 @@
 import React from 'react'
+import ZvvButton from './components/ui/ZvvButton'
 
 const App = () => {
   return (
@@ -10,14 +11,15 @@ const App = () => {
               ZVV Design System
             </h1>
             <nav>
-              <a 
+              <ZvvButton
+                as="a"
                 href="https://github.com/muraschal/zvv-boilerplate"
-                className="zvv-button-secondary"
+                variant="secondary"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 GitHub Repository
-              </a>
+              </ZvvButton>
             </nav>
           </div>
         </div>
