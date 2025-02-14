@@ -1,5 +1,6 @@
 import React from 'react'
 import ZvvButton from './components/ui/ZvvButton'
+import NewsSection from './components/sections/NewsSection'
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const App = () => {
             Los geht's!
           </ZvvButton>
         </div>
+        <NewsSection />
       </main>
     </div>
   )
