@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import ZvvButton from './components/ui/ZvvButton'
 import Home from './pages/Home'
 import KundencenterNews from './pages/news/KundencenterNews'
@@ -31,19 +31,17 @@ const Header = () => (
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className="min-h-screen bg-zvv-gray-100">
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/components/news-teaser" element={<NewsTeaserDemo />} />
-            <Route path="/components/fullscreen-header" element={<FullscreenHeaderDemo />} />
-            <Route path="/news/kundencenter" element={<KundencenterNews />} />
-          </Routes>
-        </main>
-      </div>
-    </BrowserRouter>
+    <div className="min-h-screen bg-zvv-gray-100">
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/components/news-teaser" element={<NewsTeaserDemo />} />
+          <Route path="/components/fullscreen-header" element={<FullscreenHeaderDemo />} />
+          <Route path="/news/kundencenter" element={<KundencenterNews />} />
+        </Routes>
+      </main>
+    </div>
   )
 }
 
