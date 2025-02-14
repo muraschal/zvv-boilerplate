@@ -5,7 +5,7 @@ const NEWS_DATA = [
     image: '/news/kundencenter.jpg',
     title: 'ZVV-Contact-Kundencenter am Zürich HB',
     description: 'Das ZVV-Kundencenter am HB zieht um. Ab dem 10. März 2025 begrüssen wir Sie in der Halle Landesmuseum.',
-    link: '#'
+    link: '/news/kundencenter'
   },
   {
     image: '/news/qr-code.jpg',
